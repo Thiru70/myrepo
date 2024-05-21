@@ -1,0 +1,13 @@
+marital_status = input("Enter marital status (m/u): ")
+gender = input("Enter gender (m/f): ")
+age = int(input("Enter age: "))
+
+if marital_status == 'm':
+    print("Driver is eligible for insurance.")
+else marital_status == 'u':
+    if gender == 'm' and age > 30:
+        print("Driver is eligible for insurance.")
+    elif gender == 'f' and age > 25:
+        print("Driver is eligible for insurance.")
+    else:
+        print("Driver is not eligible for insurance.")
