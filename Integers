@@ -1,0 +1,11 @@
+n=int(input("Enter value of n:"))
+m=int(input("Enter value of m:"))
+sum=0
+x=0
+for a in range (n,m+1):
+    if(a%9==0):
+        sum=sum+a
+        x=x+1
+        print(a)
+print("sum of integers:",sum)
+print("no of integers:",x)
