@@ -1,0 +1,11 @@
+hour = int(input("Enter current hour (0-23): "))
+minute = int(input("Enter current minute (0-59): "))
+hour_angle = (current_hour % 12) * 30 + current_minute * 0.5
+minute_angle = current_minute * 6
+for m in range(current_minute + 1, current_minute + 61):
+    minute_angle = m * 6
+    if (hour_angle - minute_angle) % 360 == 0:
+        print("The hour and minute hands coincide at minute:", m)
+        break
+else:
+    print("The hour and minute hands do not coincide within the next hour.")
